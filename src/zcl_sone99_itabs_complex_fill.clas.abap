@@ -96,6 +96,7 @@ CLASS zcl_sone99_itabs_complex_fill IMPLEMENTATION.
 **********************************************************************
 
     connections = CORRESPONDING #( carriers ).
+*    connections = CORRESPONDING #( BASE ( connections ) carriers ).
 
     out->write( `--------------------------------------------` ).
     out->write( `Example 4: CORRESPONDING for Internal Tables` ).

@@ -80,7 +80,9 @@ CLASS zcl_sone99_structured_access IMPLEMENTATION.
 
     CLEAR connection_nested.
 
-    connection_nested = CORRESPONDING #( connection ).
+   " MOVE-CORRESPONDING connection TO connection_nested.
+
+    connection_nested = CORRESPONDING #( connection )." MAPPING airport_from_id = airport_to_id EXCEPT airport_to_id ).
 
     out->write( `-------------------------------------------------------------` ).
     out->write( `Example 4: Correct Result after assignment with CORRESPONDING` ).

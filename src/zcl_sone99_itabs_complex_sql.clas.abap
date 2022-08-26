@@ -106,7 +106,7 @@ CLASS zcl_sone99_itabs_complex_sql IMPLEMENTATION.
      UNION ALL
     SELECT
       FROM /DMO/I_Airport
-    FIELDS 'Airport' AS type,
+    FIELDS 'Airports' AS type,
            AirportID AS Id,
            Name
      WHERE City = 'London'
